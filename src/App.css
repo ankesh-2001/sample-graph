@@ -1,0 +1,103 @@
+/* .App {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 10px;
+} */
+
+
+/* Reset some default margins */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Main container styling */
+.App {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Style for the chart container */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+/* Styling for each chart block */
+.chart-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Heading of the page */
+h1 {
+  font-size: 2.5rem;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+/* Adding card-like appearance to charts */
+.chart-container div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+}
+
+.recharts-cartesian-axis-tick-value tspan {
+  white-space: pre-line;
+}
+
+
+/* Style for the date part of the axis tick */
+.axis-date {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #333;
+}
+
+/* Style for the time part of the axis tick */
+.axis-time {
+  font-size: 10px;
+  fill: #888;
+}
+
+
+/* Media queries to make it more responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .chart-container h2 {
+    font-size: 1.2rem;
+  }
+}
